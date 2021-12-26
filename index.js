@@ -22,7 +22,7 @@ async function run() {
         const database = client.db('rolexWatch')
         const servicesCollection = database.collection('service');
 
-        // POST API
+        // POST API//
         app.post('/services', async(req , res) => {
             const service = req.body
             console.log('hit the api ' , service)
